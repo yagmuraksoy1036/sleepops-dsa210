@@ -1,30 +1,30 @@
 # Data Dictionary
 
-For this project, I'm bringing together my sleep records, class schedule, exam dates, and available Screen Time data.
+For this project, I'm using my own sleep records, university timetable, exam dates and Screen Time data.
 
-I listed the variables below to keep track of what each one means before starting the analysis.
+Since all of this information comes from different places, I thought it would be easier to list the variables first before combining everything and starting the analysis in Python.
 
 | Variable | Description | Unit |
 |---|---|---|
-| date | Date shown in my sleep records | YYYY-MM-DD |
-| sleep_start | Time I recorded going to sleep | HH:MM |
-| wake_time | Time I recorded waking up | HH:MM |
+| date | Date of my sleep record | YYYY-MM-DD |
+| sleep_start | Time I went to sleep | HH:MM |
+| wake_time | Time I woke up | HH:MM |
 | sleep_duration | Time between going to sleep and waking up | Minutes |
 | weekday | Day of the week | Monday–Sunday |
-| first_class_time | Time my first class starts that day | HH:MM |
-| exam_next_day | Whether I have an exam the following day | 0 or 1 |
-| days_to_exam | Days remaining until my next exam | Days |
-| screen_time | Total daily phone usage, if available | Minutes |
-| tiktok_usage | Daily time spent on TikTok, if available | Minutes |
+| first_class_time | When my first class starts that day | HH:MM |
+| exam_next_day | If I have an exam the following day | 0 or 1 |
+| days_to_exam | How many days until my next exam | Days |
+| screen_time | Total time spent on my phone that day, if available | Minutes |
+| tiktok_usage | Time spent on TikTok that day, if available | Minutes |
 
 ## Notes About My Data
 
-I'm starting from September 28, 2026, since that's when the fall semester began.
+I chose September 28, 2026 as my starting date because that's when the fall semester started and I got back into my university routine.
 
-I've been using my iPhone to keep track of when I go to sleep and wake up. I usually update it right when I'm going to bed and when I wake up, so the times should be fairly close to my actual sleeping hours.
+I have been using my iPhone to track when I go to sleep and when I wake up. I usually update it right before I go to bed and when I wake up, so the times should be pretty close to when I actually sleep.
 
-While looking through the records, I noticed that a few dates had more than one entry. For those dates, I decided to keep the entry shown most recently in the list instead of counting the same day twice.
+In going over my sleep records I saw that I had multiple entries for a date. Rather than count them twice I decided to use the last entry shown for those dates.
 
-There are also some days without records. I'll leave those as missing rather than guessing the times.
+There are also some days where I forgot to record my sleep. I don't want to make up any values for those days, so I'll just leave them as missing in my dataset.
 
-For Screen Time, I currently have mostly weekly summaries. I'll keep those separate from the daily sleep records until I have enough daily usage data to compare them properly.
+The Screen Time data is a little different. Right now, most of what I have is weekly summaries, while my sleep records are daily. I'm not sure yet how much of it I'll be able to use, so I'll look into that once I start working with everything in Python.
